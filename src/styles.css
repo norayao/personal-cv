@@ -1,0 +1,167 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:before, *:after{
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* 图片大小适应屏幕 */
+img {
+    max-width: 100%;
+}
+
+aside h2 {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+aside section {
+    margin: 10px;
+}
+
+aside p {
+    font-size: 0.9em;
+}
+
+aside a {
+    color: #537c68;
+    text-decoration: underline;
+}
+
+aside a:hover {
+    color: navy;
+}
+
+article h2 {
+    color: #537c68;
+    font-size: 1.1em;
+}
+
+article h4, ul {
+    color: #4f4f4f;
+    margin: 5px 0;
+}
+
+article section {
+    margin: 15px 10px;
+}
+
+article li {
+    font-size: 0.9em;
+}
+
+.header a {
+    color: #537c68;
+    border-bottom: 1px solid;
+}
+
+#name h1{
+    margin-bottom: 10px;
+    color: #537c68;
+}
+
+
+svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+strong{
+    color: #537c68;
+}
+/* 雷达图 */
+#echart {
+    width: 240px;
+    height: 200px;
+}
+
+
+@media (min-width: 500px) {
+    body {
+        background: #eee;
+        margin: 0 20px 20px 20px;
+
+    }
+
+    /* page size: A4 */
+    #content {
+        width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    aside {
+        min-width: 35%;
+        background: #f8f8f8;
+        border-right: 1px solid #d2d2d2;
+        padding: 10px;
+        color: #537c68;
+        line-height: 1.5em;
+    }
+
+    article {
+        background: #f2f3f4;
+        padding: 20px;
+        line-height: 1.7em;
+    }
+
+
+    .item .header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+    }
+
+
+
+    /* 柱状图 */
+    /*#echart{*/
+    /*    height: 350px;*/
+    /*}*/
+    aside section {
+        margin-bottom: 40px;
+    }
+
+    hr {
+        color: #537c68;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    body{
+        background: #eee;
+        margin: 20px 20px;
+        line-height: 1.6em;
+    }
+    hr{
+        display: none;
+    }
+    aside{
+        width: 100%;
+    }
+    aside section h2{
+        color: #537c68;
+    }
+}
